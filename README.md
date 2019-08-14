@@ -1,8 +1,6 @@
-# Webhook service for ExtendedResourceToleration
+# What is it?
 
-## What is it?
-
-Dynamic version of ExtendedResourceToleration plugin.
+Dynamic version of ExtendedResourceToleration plugin for Kubernetes.
 
 It automatically adds tolerations if Pod definition has extended resource requests/limits, like:
 
