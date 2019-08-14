@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  template:
+    spec:
+      containers:
+      - image: aflc/extended-resource-toleration-webhook:0.1
+        name: ert-webhook
+        volumeMounts:
+        - mountPath: /etc/certs
+          name: cert
+          readOnly: true
+      volumes:
+      - name: cert
+        secret:
+          secretName: ert-webhook-certs
+
