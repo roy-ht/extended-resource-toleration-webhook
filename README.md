@@ -46,12 +46,12 @@ See official [Documentation](https://kubernetes.io/docs/reference/access-authn-a
 
 You need some dependencies:
 
-* GNU make
-* [kustomize](https://kustomize.io/)
-* openssl
+- GNU make
+- [kustomize](https://kustomize.io/)
+- openssl
 
 ```bash
-git clone https://github.com/aflc/extended-resource-toleration.git
+git clone https://github.com/roy-ht/extended-resource-toleration.git
 cd extended-resource-toleration
 # You can check manifests if needed
 KS_NAMESPACE=default KS_ARG="--dryrun" make apply-k8s
@@ -62,5 +62,5 @@ KS_NAMESPACE=default make apply-k8s
 
 Some part of codes are derived from below:
 
-* [kubeflow/admission-webhook](https://github.com/kubeflow/kubeflow/tree/master/components/admission-webhook)
-* [kubernetes/plugin/extendedresourcetoleration](https://github.com/kubernetes/kubernetes/tree/master/plugin/pkg/admission/extendedresourcetoleration)
+- [kubeflow/admission-webhook](https://github.com/kubeflow/kubeflow/tree/master/components/admission-webhook)
+- [kubernetes/plugin/extendedresourcetoleration](https://github.com/kubernetes/kubernetes/tree/master/plugin/pkg/admission/extendedresourcetoleration)
